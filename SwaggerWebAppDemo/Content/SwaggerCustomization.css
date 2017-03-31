@@ -1,0 +1,16 @@
+﻿.swagger-section #header {
+    background-color: #BB3300;
+}
+
+.info {
+    font-size: 14px;
+    border-bottom: 2px solid black;
+}
+
+.info-name {
+    font-size: 14px;
+}
+
+#input_apiKey {
+    display: none !important;
+}

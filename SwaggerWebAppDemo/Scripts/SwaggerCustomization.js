@@ -1,0 +1,1 @@
+﻿$(function () {    /*        Not the greatest way, but shows how we can make simple changes    */    $('#logo').attr('href','/apiDocs/index');    $('.logo__title').text("Sample API Documentation");    $('#resources_container').prepend("<h3>API Groups</h3>");    $('.heading h2 a').append(" Action Listing");});
