@@ -14,12 +14,15 @@
             Sample get method, used to get a status message
             </summary>
             <returns>Status message.  Should be success for all responses</returns>
+            <response code="200">Successful response</response>
         </member>
         <member name="M:SwaggerWebAppDemo.Controllers.SampleController.TetAuthenticatedGet">
             <summary>
             Sample authenticated get method, used to show a more secure method requiring authentication
             </summary>
             <returns>Status message. should be success for all authenticated responses</returns>
+            <response code="200">Successful response</response>
+            <response code="401">User not yet authenticated</response>
         </member>
     </members>
 </doc>
