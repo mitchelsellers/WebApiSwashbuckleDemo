@@ -4,5 +4,22 @@
         <name>SwaggerWebAppDemo</name>
     </assembly>
     <members>
+        <member name="T:SwaggerWebAppDemo.Controllers.SampleController">
+            <summary>
+            Grouping of API Methods for sample/demonstration purposes
+            </summary>
+        </member>
+        <member name="M:SwaggerWebAppDemo.Controllers.SampleController.TestPublicGet">
+            <summary>
+            Sample get method, used to get a status message
+            </summary>
+            <returns>Status message.  Should be success for all responses</returns>
+        </member>
+        <member name="M:SwaggerWebAppDemo.Controllers.SampleController.TetAuthenticatedGet">
+            <summary>
+            Sample authenticated get method, used to show a more secure method requiring authentication
+            </summary>
+            <returns>Status message. should be success for all authenticated responses</returns>
+        </member>
     </members>
 </doc>
