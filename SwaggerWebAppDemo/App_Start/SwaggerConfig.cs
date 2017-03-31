@@ -4,6 +4,7 @@ using SwaggerWebAppDemo;
 using Swashbuckle.Application;
 using System;
 using System.Reflection;
+using SwaggerWebAppDemo.Filters;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
@@ -29,9 +30,10 @@ namespace SwaggerWebAppDemo
 
                     //Setup documentation
                     c.IncludeXmlComments($@"{AppDomain.CurrentDomain.BaseDirectory}\App_data\SwaggerWebAppDemo.XML");
-
-
                     //NOTE: You could use more than one file if needed
+
+                    //Setup, assuimg that we have configured OAuth Authentication
+                    c.OperationFilter<AuthorizationHeaderOperationFilter>();
 
                     // By default, the service root url is inferred from the request used to access the docs.
                     // However, there may be situations (e.g. proxy and load-balanced environments) where this does not
