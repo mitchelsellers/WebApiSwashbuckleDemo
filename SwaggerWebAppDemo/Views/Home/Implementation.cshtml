@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Implementation Details";
+}
+<h2>@ViewBag.Title.</h2>
+
+<p>The steps below outline how this project was setup, to be compared alongside the slides from presentation</p>
+
+<h3>Step One: Add Swashbuckle</h3>
+
+<p>The first step in the process is to add Swashbuckle to the project.  This adds a number of things, and does a lot of magic behind the scenes.</p>
+
+<code>
+    install-package swashbuckle
+</code>
+
+<h3>Edit Project Settings to Enable Documentation Build</h3>
+
+<p>To help build the best overall documentation, we want to use XML comments to help drive the structure of our API documentation.  This needs to be enabled as part of a compile options in the project.</p>
+
