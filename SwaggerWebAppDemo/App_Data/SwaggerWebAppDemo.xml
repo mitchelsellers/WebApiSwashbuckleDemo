@@ -24,5 +24,56 @@
             <response code="200">Successful response</response>
             <response code="401">User not yet authenticated</response>
         </member>
+        <member name="M:SwaggerWebAppDemo.Controllers.SampleController.SearchEmployers(SwaggerWebAppDemo.Models.SearchRequestModel)">
+            <summary>
+            Method to get a listing of employers with a specified search process
+            </summary>
+            <remarks>
+            This is a great place to put examples for your users to see what they might need to know.
+            </remarks>
+            <param name="options">The desired search criteria for</param>
+            <returns>Result object with success/failure indication and any results</returns>
+            <response code="200">Successful response</response>
+            <response code="401">User not yet authenticated</response>
+        </member>
+        <member name="T:SwaggerWebAppDemo.Models.SearchRequestModel">
+            <summary>
+            Model class for submitting search requests into the API methods
+            </summary>
+        </member>
+        <member name="P:SwaggerWebAppDemo.Models.SearchRequestModel.SearchCriteria">
+            <summary>
+            The search critera that should be used.  
+            </summary>
+            <remarks>
+            Can use * or _ for wildcards (Note, not shown)
+            </remarks>
+            <value>User desired search (Note, not shown)</value>
+        </member>
+        <member name="P:SwaggerWebAppDemo.Models.SearchRequestModel.IncludeDeleted">
+            <summary>
+            Should the search include deleted records.
+            </summary>
+        </member>
+        <member name="T:SwaggerWebAppDemo.Models.EmployerSearchResultModel">
+            <summary>
+            Represents a response to employer search methods
+            </summary>
+        </member>
+        <member name="P:SwaggerWebAppDemo.Models.EmployerSearchResultModel.Successful">
+            <summary>
+            Was this successful
+            </summary>
+        </member>
+        <member name="P:SwaggerWebAppDemo.Models.EmployerSearchResultModel.Employers">
+            <summary>
+            The listing of found employers
+            </summary>
+        </member>
+        <member name="P:SwaggerWebAppDemo.Models.Employer.FirstName">
+            <summary>
+            First name of the employer
+            </summary>
+        </member>
     </members>
 </doc>
